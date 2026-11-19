@@ -6,6 +6,9 @@
 ## Poster Preview
 <img width="9363" height="6623" alt="Attention Algorithm Poster" src="https://github.com/user-attachments/assets/0f44ca17-504d-4034-b446-9927ad505d88" />
 
+> 💡 **Like this poster layout?** You can create your own academic or conference poster using our blank [Poster Skeleton Template on Overleaf](https://www.overleaf.com/docs?snip_uri[]=https://raw.githubusercontent.com/Nazmul142965/Attention-In-Poster/main/Poster-Template/main.tex&snip_uri[]=https://raw.githubusercontent.com/Nazmul142965/Attention-In-Poster/main/Poster-Template/latexmkrc)!
+
+
 
 ## Project Files
 All source files and the final document can be found in the [Assets And Codes](./Assets%20And%20Codes/) folder.
