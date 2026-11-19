@@ -1,0 +1,3 @@
+# Force Overleaf / latexmk to compile with XeLaTeX automatically
+$pdf_mode = 5;
+$xelatex = 'xelatex -synctex=1 %O %S';

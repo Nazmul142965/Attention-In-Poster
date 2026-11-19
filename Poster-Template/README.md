@@ -2,9 +2,9 @@
 
 This folder contains a blank, reusable skeleton template based on `tikzposter` for creating clean, high-impact academic and algorithm conference posters (A0 Landscape).
 
-[![Open in Overleaf](https://img.shields.io/badge/Overleaf-Open%20Template-47A148?style=for-the-badge&logo=overleaf&logoColor=white)](https://www.overleaf.com/docs?snip_uri=https://raw.githubusercontent.com/Nazmul142965/Attention-In-Poster/main/Poster-Template/main.tex)
+[![Open in Overleaf](https://img.shields.io/badge/Overleaf-Open%20Template-47A148?style=for-the-badge&logo=overleaf&logoColor=white)](https://www.overleaf.com/docs?snip_uri[]=https://raw.githubusercontent.com/Nazmul142965/Attention-In-Poster/main/Poster-Template/main.tex&snip_uri[]=https://raw.githubusercontent.com/Nazmul142965/Attention-In-Poster/main/Poster-Template/latexmkrc)
 
-👉 **[Click to open this template directly in Overleaf](https://www.overleaf.com/docs?snip_uri=https://raw.githubusercontent.com/Nazmul142965/Attention-In-Poster/main/Poster-Template/main.tex)**
+👉 **[Click to open this template directly in Overleaf](https://www.overleaf.com/docs?snip_uri[]=https://raw.githubusercontent.com/Nazmul142965/Attention-In-Poster/main/Poster-Template/main.tex&snip_uri[]=https://raw.githubusercontent.com/Nazmul142965/Attention-In-Poster/main/Poster-Template/latexmkrc)**
 
 
 ---
