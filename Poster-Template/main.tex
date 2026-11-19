@@ -3,13 +3,19 @@
 % ==========================================
 % Packages & Font Setup
 % ==========================================
-% NOTE: If using 'fontspec' or custom scripts (like Bengali), 
-% compile with XeLaTeX or LuaLaTeX (on Overleaf: Menu -> Compiler -> XeLaTeX).
-\usepackage{fontspec}
-\setmainfont{FreeSerif} 
+\usepackage{iftex}
 
-% Optional: Custom script font support (e.g. Bengali)
-% \newfontfamily\bangla{FreeSerif}[Script=Bengali]
+\ifPDFTeX
+  % Default compiler (pdfLaTeX) - works out-of-the-box on Overleaf
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+\else
+  % For XeLaTeX or LuaLaTeX (supports custom fonts and non-Latin scripts like Bengali)
+  \usepackage{fontspec}
+  \setmainfont{FreeSerif}
+  % Optional: Bengali script font support
+  % \newfontfamily\bangla{FreeSerif}[Script=Bengali]
+\fi
 
 \usepackage{amsmath, amssymb}
 \usepackage{graphicx}
