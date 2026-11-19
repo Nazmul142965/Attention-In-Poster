@@ -1,0 +1,173 @@
+\documentclass[25pt, a0paper, landscape]{tikzposter}
+
+% ==========================================
+% Packages & Font Setup
+% ==========================================
+% NOTE: If using 'fontspec' or custom scripts (like Bengali), 
+% compile with XeLaTeX or LuaLaTeX (on Overleaf: Menu -> Compiler -> XeLaTeX).
+\usepackage{fontspec}
+\setmainfont{FreeSerif} 
+
+% Optional: Custom script font support (e.g. Bengali)
+% \newfontfamily\bangla{FreeSerif}[Script=Bengali]
+
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+% ==========================================
+% Color & Theme Setup
+% ==========================================
+% Pre-built themes in tikzposter:
+% Default, Rays, Basic, Simple, Envelope, Wave, Board, Autumn, Desert
+\usetheme{Board} 
+\colorlet{backgroundcolor}{white}
+
+% ==========================================
+% Title Information
+% ==========================================
+\title{Your Research / Project Title Here}
+\author{Author Name (e.g., ID: 202XXXXXXX)}
+\institute{Department of ..., University / Institution Name}
+
+\begin{document}
+
+\maketitle
+
+% ==========================================
+% 3-Column Poster Layout
+% ==========================================
+\begin{columns}
+
+    % ================= COLUMN 1 =================
+    \column{0.33}
+    
+    \block{1. Overview / Introduction}{
+        Write your project introduction, background, and motivation here. 
+        Explain the core problem your work solves.
+        
+        \vspace{0.4cm}
+        \begin{itemize}
+            \item \textbf{Key Point 1:} Motivation or challenge statement.
+            \item \textbf{Key Point 2:} Core approach or solution.
+            \item \textbf{Key Point 3:} Summary of contributions.
+        \end{itemize}
+    }
+    
+    \block{2. Mathematical Formulation / Methodology}{
+        Describe the mathematical foundation and key formulas here.
+        
+        \vspace{0.4cm}
+        \[
+        y = f(x; \theta) + \epsilon
+        \]
+        \vspace{0.4cm}
+        
+        \textbf{Variable Definitions:}
+        \begin{itemize}
+            \item $x$ \textbf{(Input):} Input feature vector or matrix.
+            \item $\theta$ \textbf{(Parameters):} Learnable weights and biases.
+            \item $y$ \textbf{(Output):} Predicted output or representation.
+        \end{itemize}
+    }
+
+    \block{3. Step-by-Step Workflow}{
+        Explain the step-by-step algorithm or procedure flow.
+        
+        \vspace{0.5cm}
+        \textbf{Step 1: Input Processing} \\
+        Describe how input data is tokenized, normalized, or embedded.
+        
+        \vspace{0.5cm}
+        \textbf{Step 2: Core Operation} \\
+        Explain the transformations, matrix operations, or neural layers.
+        
+        \vspace{0.5cm}
+        \textbf{Step 3: Output Generation} \\
+        Explain how the final score, probability, or context is computed.
+    }
+
+    % ================= COLUMN 2 =================
+    \column{0.33}
+
+    \block{4. Diagrams \& Architecture}{
+        \begin{center}
+            % Replace the placeholder below with your actual diagram:
+            % \includegraphics[width=0.7\linewidth]{architecture.png}
+            \vspace{1cm}
+            \fbox{\parbox[c][6cm][c]{0.7\linewidth}{\centering \Large \textbf{[ Insert Your Diagram / Figure Here ]}}}
+            \vspace{1cm}\\
+            \textit{Figure 1: Architectural diagram and computational pipeline.}
+        \end{center}
+    }
+
+    \block{5. Complexity / Performance Analysis}{
+        Detail the computational complexity, efficiency, and resource bottlenecks.
+
+        \vspace{0.4cm}
+        \textbf{1. Time Complexity Breakdown: $\mathcal{O}(\dots)$}
+        \begin{itemize}
+            \item \textbf{Operation A:} $\mathcal{O}(N \cdot d)$
+            \item \textbf{Operation B:} $\mathcal{O}(N^2)$ (Primary bottleneck)
+        \end{itemize}
+        
+        \vspace{0.4cm}
+        \textbf{2. Space (Memory) Complexity: $\mathcal{O}(\dots)$}
+        \begin{itemize}
+            \item Intermediate storage requirements and cache behavior.
+        \end{itemize}
+    }
+
+    \block{6. Real-World Applications}{
+        Explain the practical use cases where this algorithm or model excels.
+        
+        \begin{itemize}
+            \item \textbf{Application 1:} Use case description and benefits.
+            \item \textbf{Application 2:} Edge cases and practical impact.
+        \end{itemize}
+    }
+
+    % ================= COLUMN 3 =================
+    \column{0.34}
+
+    \block{7. Case Study / Simulation}{
+        Present a concrete toy example, simulation, or walkthrough.
+        
+        \vspace{0.3cm}
+        \textbf{Input Scenario:} Describe sample input values.
+        
+        \vspace{0.3cm}
+        \textbf{Observed Outcome:} Describe what happens and why it validates your approach.
+    }
+
+    \block{8. Comparative Analysis}{
+        \normalsize \color{black}
+        \vspace{0.5cm}
+        \begin{center}
+        \resizebox{\linewidth}{!}{
+        \renewcommand{\arraystretch}{1.8}
+        \begin{tabular}{l l l l}
+        \toprule
+        \textbf{Feature / Property} & \textbf{Traditional Approach} & \textbf{Alternative Approach} & \textbf{Proposed Method} \\
+        \midrule
+        Processing Style & Sequential & Recurrent & Parallelized \\
+        Complexity & $\mathcal{O}(N)$ & $\mathcal{O}(N \cdot d)$ & $\mathcal{O}(N^2 \cdot d)$ \\
+        Scalability & Low & Moderate & Very High \\
+        Performance & Baseline & Good & \textbf{State of the Art} \\
+        \bottomrule
+        \end{tabular}
+        }
+        \end{center}
+    }
+
+    \block{9. References}{
+        \large \color{black}
+        \begin{itemize}
+            \item [1] Author, A., et al. (Year). Paper Title. \textit{Conference / Journal Name}.
+            \item [2] Author, B., et al. (Year). Paper Title. \textit{Conference / Journal Name}.
+        \end{itemize}
+    }
+
+\end{columns}
+
+\end{document}
